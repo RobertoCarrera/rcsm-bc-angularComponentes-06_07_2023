@@ -1,0 +1,27 @@
+<!-- Código HTML que aparece cuando enviamos info a través del formulario -->
+<div class="container container_users_table">
+    <div class="row row_users_table">
+        <div class="col mt-4 col_users_table">
+            <h1>Listado clientes</h1>
+            <table class="table table-bordered users_table">
+                <tr>
+                    <th>Nombre</th>
+                    <th>CIF</th>
+                    <th>Dirección</th>
+                    <th>Grupo</th>
+                </tr>
+                <!-- Se van mostrando todos los usuarios según se añaden 
+                La variable es user para recorrerla a partir de ahora aquí, en el HTML.
+                El data_users es el nombre de la variable que almacena la información que quermeos mostrar
+                y que está en el TS de este componente -->
+                <tr *ngFor="let user of data_users" >
+                    <!-- Hacemos interpolación de los datos que queremos mostrar en cada celda -->
+                    <td> {{user.name}} </td>
+                    <td> {{user.cif}} </td>
+                    <td> {{user.address}} </td>
+                    <td> {{user.group}} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

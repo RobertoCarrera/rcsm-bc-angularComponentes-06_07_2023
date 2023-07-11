@@ -1,0 +1,32 @@
+/* Estilos de la tabla que se aparece cuando enviamos info con el input */
+.container_users_table{
+
+    width: 50vw;
+    height: 50vh;
+}
+
+.row_users_table{
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col_users_table h1{
+
+    width: 90%;
+}
+
+.users_table{
+
+    width: 90%;
+}
+
+/* Color de fondo y de la fuente del header */
+table tr:first-child{
+
+    background-color: skyblue;
+    color: white;
+}
